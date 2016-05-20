@@ -1,0 +1,290 @@
+/* È«¾Ö*/
+html,body,div,ul,li,img {padding:0px; margin:0px; border:0px;}
+body{ background:url(../images/qw.png);}
+ul,li {list-style:none;}
+
+/* logo标记*/
+#header{width:1000px;height:170px;margin:0 auto;}
+#top{
+	width:1000px;
+	height:130px;
+	margin: 0 auto;
+}
+#top div{
+	float:left;
+}
+#logo{
+	position:relative;
+	width:250px;
+	height:70px;
+	margin: 35px 80px 20px 10px;
+	
+
+}
+#logo_two{
+	width:660px;
+	height:110px;
+	margin-top:15px;
+	background-image:url(../images/pic.jpg);
+}
+
+/* 内容项*/
+#content{
+		top:2px;
+		position:relative;
+		width:1000px;
+		height:300px;
+		margin: 0px;
+		padding:Opx;
+		margin:0 auto;
+		background:#FFF;
+}
+
+#mainbody { width:1000px;clear: both; overflow: hidden;}
+/* card */
+/*#left_area{width: 249px;height:350px;background-color: #ffcc22;}*/
+.card { width: 249px; height: 180px;float: left;overflow: hidden ;box-shadow: 0px 1px 0px rgba(255,255,255,.1), inset 0px 1px 1px rgba(0,0,0,.7); border-radius: 7px; background: url(../images/1quote-bg.png) no-repeat top right rgba(243,243,243,1); }
+.card h1 { padding:3px ;color:#666;font:26px/180% Arial,Lucida,Verdana,"华文行楷",Helvetica,sans-serif;}
+.card p:first-child { padding: 40px 0 0 40px } /* ½á¹¹ÐÔÎ±ÀàÑ¡Ôñ·û Ñ¡ÔñµÚÒ»¸öp±êÇ©£¬²¢ÇÒÉèÖÃÉÏ¡¢×ó¾àÀëÊÇ40px*/
+.card p { font-weight:bold; padding: 0 0 0 40px; line-height: 28px; 
+ font:16px/180% Arial,Lucida,Verdana,"华文行楷",Helvetica,sans-serif;
+ -webkit-animation: animations2 5s ease-in-out 5s; -moz-animation: animations2 5s ease-in-out 5s; -o-animation: animations2 5s ease-in-out 5s; -ms-animation: animations2 5s ease-in-out 5s; animation: animations2 5s ease-in-out 5s; }
+
+.contact{width:750px;height:180px;box-shadow: 0px 1px 0px rgba(255,255,255,.1), inset 0px 1px 1px rgba(0,0,0,.7); border-radius: 7px; 
+background: url(../images/1quote-bg.png) no-repeat top right rgba(243,243,243,1); float: left;overflow: hidden ;}
+.contact h1 { padding: 1px ;color:#666;font:26px/180% Arial,Lucida,Verdana,"华文行楷",Helvetica,sans-serif;}
+.contact p{padding: 0 0 0 3px; line-height: 10px; font:18px/
+180% Arial,Lucida,Verdana,"华文行楷",Helvetica,sans-serif; margin-top:-18px;}
+.contact p span{font:13.5px/180% Arial,Lucida,Verdana,"黑体",Helvetica,sans-serif;}
+
+
+
+
+#repair-pic{ width:1000px; height:20px;font-size:15px;font-weight:bold; background:#fec284;
+box-shadow: 0px 1px 0px rgba(255,255,255,.1), inset 1px 1px 1px rgba(0,0,0,.4);	border-radius: 5px;
+}
+/*±äËÙÏäÎ¬ÐÞÇÐ»»*/
+/*Õû¸öµ×²¿Í¼Æ¬ºÍÇÐ»»ÇøÓò*/
+#slide-bsx{background: #FFF;width:1000px; height:180px;	position:relative; margin:0px auto;}
+/*TabÇÐ»»À¸*/
+#Tab{
+	overflow:hidden;
+	width:1000px;
+	height:60px;
+	display:block;
+	margin-left:0px;
+	padding:0px 0px;
+}
+ #tabs {
+	overflow:hidden;
+    width:1000px;;
+    margin:0px ;
+    padding:0px;
+    list-style: none;
+  }
+/*ÇÐ»»·ûºÅÖ®¼äµÄ¼ä¾à*/
+  #tabs li {
+    float: left;
+    margin: 0px 0px 0px 0px;
+	text-align;
+	font-weight:bold;
+	font-size:15px;
+	border:1px solid #fff;
+  }
+/*ÇÐ»»À¸µÄ´óÐ¡³¤¶Ì*/
+  #tabs a {
+    float: left;
+    margin:0 auto;
+    position: relative;
+    padding: 0px 0px;
+    height:0px;
+	width:248px;
+    line-height: 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+	color:#000;   
+    border-right: 30px solid inherit;/*ÇÐ»»signµÄÐÎ×´*/
+    border-bottom: 30px solid  #FFA851;
+    opacity: .7;
+    font:19px/180% Arial,Lucida,Verdana,"华文行楷",Helvetica,sans-serif;
+    filter: alpha(opacity=80);      
+  }
+  /*ÉèÖÃÍ¼Æ¬ÂË¾µÐ§¹û*/
+  #tabs a:hover,#tabs a:focus {
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
+  
+/*TabÇÐ»»ÖÐµÄÍ¼Æ¬ÇøÓò*/ 
+#content_tt {
+	display:block;
+	float:left;
+	  width:1000px;
+	  height:110px;
+	  padding-top:2.5em;
+	  margin:-30px 0px 0px 0px; 
+  }
+
+/*Í¼Æ¬¼äµÄ¼ä¾à*/
+#tab1 a img,#tab2 a img,#tab3 a img,#tab4 a img{
+	    margin:-40px 0px 0px 0px;
+  }
+/*Êé¼®ÐÅÏ¢±¸×¢*/
+.book
+{
+	width:120px;
+	height:120px;
+	float:left;
+	display:block;
+	margin:10px 20px 0px 25px;
+}
+.book img
+{
+	display:block;
+	position:relative;
+	width:120px;
+	height:120px;
+	border:1px solid #CCC;
+
+}
+.b_b{
+	text-align:center;
+	font-size:10px;
+	font-weight:bold;
+}
+.b_b_b{
+	text-align:center;
+	font-size:10px;
+	font-weight:bold;
+	margin-top: 3px;
+}
+  
+/*TabÇÐ»»ÖÐµÄÍ¼Æ¬ÇøÓò*/ 
+#content_center {
+	display:block;
+	float:left;
+	  width:1000px;
+	  height:450px;
+	  border:1px solid #CCC;
+	  background:#FFF;
+	  padding-top:2.5em;
+	  margin:0px; 
+  }
+  
+#contact-text{ width:700px; float:left; margin-left:20px;}
+#contact-text p{ font-size:20px; font-weight:bold; margin-top:10px;}
+#contact-text p span{ color:#F96; font-size:30px;}
+#com-item{	position:relative;width:250px;height:70px;margin:5px auto;}
+#content_center p{ font-size:20px;}
+
+/*产品展示与技术的服务*/
+#contact{ width:1000px; height:470px; background:#FFF; margin-top:2px; border:1px solid #CCC; }/*产品展示中心总中间部分*/
+
+#contact_service{ width:1000px; height:630px; background:#FFF; margin-top:2px; border:1px solid #CCC; }/*技术服务总中间部分*/
+#product-show{ width:740px; height:455px; border:1px solid #CCC; float:left; margin-left:7px;}
+#product-service{
+	width:740px; height:600px; border:1px solid #CCC; float:left; margin-left:7px;
+}/*行业展示主包含*/
+#cjbsx-piclogo{
+	width:740px; height:30px; 
+	background:#FDB;
+	box-shadow: 0px 1px 0px rgba(255,255,255,.1), inset 1px 1px 1px rgba(0,0,0,.4);
+	border-radius: 5px;
+}/*常见变速箱问题及行业展示logo内的内嵌效果*/
+#cjbsx-service{
+	width:740px; height:30px; 
+	background:#FDB;
+	box-shadow: 0px 1px 0px rgba(255,255,255,.1), inset 1px 1px 1px rgba(0,0,0,.4);
+	border-radius: 5px;
+}
+
+/*链接图片及问题解答*/
+#contact_service{
+	width:1000px; height:600px; background:#FFF; margin-top:2px; border:1px solid #CCC;/*链接图片及问题解答整个中间区域*/
+}
+#product-service_answer{
+	width:740px; height:590px; border:1px solid #CCC; float:left; margin-left:7px;
+}
+#cjbsx-service_answer{
+	width:740px; height:30px; 
+	background:#FDB;
+	box-shadow: 0px 1px 0px rgba(255,255,255,.1), inset 1px 1px 1px rgba(0,0,0,.4);
+	border-radius: 5px;
+}
+#cjbsx-service_answer p{font-size:18px;font-weight: bold;margin-left: 5px;color: #666666;margin-left: 260px;}
+#techology_service_show_answer{
+	width: 738px;
+	height: 560px;
+/*	border: 1px solid #ffff00;*//*小版块图片介绍模块*/
+}
+.pic-show img{font-size:30px;margin-left: 219px;}
+.text-intro {font-size:18px;font-weight: bold;color: #444444;}
+.text-intro p{font-weight: bold;font-size: 20px; color: black;}
+/*链接图片及问题解答*/
+
+#cjbsx-piclogo p{ margin:auto 12px; font-weight:bold;font:19px/180% Arial,Lucida,Verdana,"华文行楷",Helvetica,sans-serif;font-weight: bold;}
+#cjbsx-service p{margin:auto 12px; font-weight:bold;font:22px/180% Arial,Lucida,Verdana,"华文行楷",Helvetica,sans-serif;font-weight: bold;}
+
+/*常见问题及行业展示（技术服务）*/
+#techology_service_show{
+	width: 738px;
+	height: 570px;
+/*	border: 1px solid #ffff00;/*service的模块区域*/*/
+}/*黄色区域的技术服务部分*/
+#techology_service_show img{
+	float:left;
+	display:block;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+.text{
+	margin:11px 0px 0px 0px;
+	text-align:center;
+	font-size:15px
+ }
+ .text p{
+ 	font-weight:bold;
+ }/*文字加粗*/
+#t1,#t2,#t3,#t4,#t5{
+	width:700px;
+	height:100px;
+	/*border:2px solid #999;*/
+	margin:0px 0px 0px 5px;
+}
+
+
+
+#pic-show{ width:740px; height:400px; background:#ffffff; display:block;}
+#r1,#r2,#r3,#r4{
+	width:736px;
+	height:130px;
+	margin:0px 0px 5px 0px;
+	margin-top: 10px;
+}
+.img-sert1,.img-sert2,.img-sert3,.img-sert4
+{ 
+	width:160px; 
+	height:108px;
+ 	border:1px solid #808080;
+ 	margin:0px 6px 0px 13px; 
+ 	float:left;
+}
+/*Æû³µÉÌ±ê¹ö¶¯Ð§¹û*/
+#demo { background: #FFF; overflow:hidden;  width:1000px; } 
+#demo img {border: 3px solid #F2F2F2;} 
+#indemo {width:800%; border:1px dashed #F0F;}
+#indemo,#demo1,#demo2{float: left;} 
+
+
+/*µ×²¿°æÈ¨*/
+#footer{width:1000px;height:60px;}
+#footer p{ margin-top:5px; font-weight:bold;}
+
+
+/*¶¯»­ÇøÓò³¤¿í¶È*/
+.slidebox{width:1000px;height:300px;overflow:hidden;position:relative;border:solid 1px #ddd;margin:0 auto;}
+.slidepic{position:absolute;}
+.slidepic li{height:300px;overflow:hidden; }
+.slidebtn{position:absolute;bottom:10px;right:10px;float:right;}
+.slidebtn li{background:#fff;border:1px solid #D00000;cursor:pointer;float:left;font-family:arial;height:18px;line-height:18px;width:18px;margin:4px;text-align:center;color:#D00000;}
+.slidebtn li.current{background:#FF0000;border:1px solid #D00000;height:24px;line-height:24px;width:24px;margin:0 2px;color:#fff;font-weight:800;}

@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>华信-汽车自动变速箱</title>
+<link href="../css/all.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+ <div id="header">
+	<div id="top">
+	  <a href="../index.html"><div id="logo"><img src="../images/logo.jpg" /></div></a>  
+      <div id="logo_two"></div>
+    </div>
+    
+ 	<div class="navbox">
+	<div class="nav">
+		<ul class="clearfix">
+			<li><a href="../index.html" class="selected"><span>网站首页</span></a></li>
+			<li class="drop-menu-effect">
+				<a href="cop-intro.html"><span>公司介绍</span></a>
+			</li>
+		  <li class="drop-menu-effect">
+				<a href="huaxin/../product-show.html"><span>产品展示中心</span></a>	
+			</li>
+			<li class="drop-menu-effect">
+				<a href="huaxin/../service.html"><span>技术服务</span></a>	
+			</li>
+		    <li class="drop-menu-effect">
+				<a href="contact.html"><span>联系我们</span></a>
+			</li>
+    	</ul>
+	</div>
+    </div>
+  <p>&nbsp;</p>
+ </div>
+
+  <div id="content">
+        <div id="mid">
+           <div class="slidebox">
+	          <ul class="slidepic">
+		          <li><a href=""><img  src="../images/523.jpg" /></a></li>
+		          <li><a href=""><img  src="../images/524.jpg" /></a></li>
+		          <li><a href=""><img  src="../images/521.jpg" /></a></li>
+	          </ul>
+	        <div class="slidebtn">
+               <ul>
+		     	<li class="current">1</li>
+			    <li>2</li>
+				<li>3</li>					
+		   	  </ul>
+	        </div>
+         </div>  
+        </div>
+  <div>
+  
+
+    <div id="contact_service"> 
+     	  <div class="card">
+      		<h1>联系我们</h1>
+     		 <p>联系人:申经理</p>
+     		 <p>电话:180-1400-0207</p>
+     		 <p>地址:吴中区迎春南路76号</p>
+     		 <p>Email:1036600622@qq.com</p>
+   		  </div>
+
+
+      <div id="product-service_answer">
+			<div id="cjbsx-service_answer"><p>常见变速箱问题及行业展示</p></div>
+            <div id="techology_service_show_answer">
+					<div class="pic-show"><img src="../images/bsx/bxs10.jpg" width="300px" height="200px" />
+						<div class="b_b_b">奥迪汽车检查维修</div>
+					</div>
+					<br />
+					<div class="text-intro"><p>变速箱的常见问题及解决方案：</p>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					驾驶装有自动变速器的汽车时，驾驶员需要通过操纵换档杆来改变档位模式。这个过程常俗称为&ldquo;换挡&rdquo;，但它并不同于手动变速器的换挡过程，因为操纵换档杆并不选定特定的档位，只选定档位模式，而换档过程是由自动变速器自动完成的。不同的自动变速器设定的档位模式并不相同，但多数都会有以下几个档位：P（停车档）、R（倒车档）、N（空档）、D（前进档）、S（低速2档）、L（低速档）。自排车辆在入档前，需踩住煞车，以策安全。为了防止非预期加速（俗称&ldquo;爆冲&rdquo;）发生，除了较早期车辆外，现今大多数自排车辆在驾驶人未踩煞车时无法排入D档。另外为避免误触排档杆，从P档排至R档、N档等需要按下档位释放钮才可入档（排档杆移动路径非直线的车款，如丰田Wish等，则没有档位释放钮的设计）P（Park） &mdash;选择该档位则变速器的输出轴被锁住，汽车无法移动。此时应同时将手刹拉紧，唯此才能锁住轮胎，可延长变速器和驻车装置的寿命。为防止变速器受损，应等汽车彻底停稳之后，再挂入该档。P位是可以起动的仅有的两个档位之一。选择该档位则变速器倒档齿轮被结合，驱动汽车后行。应等汽车彻底停稳之后，再挂入该档。N（Neutral） &mdash;选择该档位则变速器进入空档，也可在起动时使用。D位是最常用的行驶位置，汽车在该档位下能在一定档位范围内自动换挡，不同的自动变速器的档位数会有所不同，其中以4个档位最为常见。
+					</div>
+            </div>
+      </div>
+
+
+    </div>                 
+          <div id="footer">
+            <center><p>苏州华信自动变速箱维修&nbsp;&nbsp;联系电话：180-1400-0207&nbsp;&nbsp;</p></center>
+              <center><p>Copyright © 2015 苏州华信自动变速箱维修 www.autohuaxin.com 版权所有 All rights reserved</p></center>
+        </div>     
+</body>
+</html>
+
+<script src="../js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript">
+function dropMenu(obj){
+	$(obj).each(function(){
+		var theSpan = $(this);
+		var theMenu = theSpan.find(".submenu");
+		var tarHeight = theMenu.height();
+		theMenu.css({height:0,opacity:0});
+		theSpan.hover(
+			function(){
+				$(this).addClass("selected");
+				theMenu.stop().show().animate({height:tarHeight,opacity:1},400);
+			},
+			function(){
+				$(this).removeClass("selected");
+				theMenu.stop().animate({height:0,opacity:0},400,function(){
+					$(this).css({display:"none"});
+				});
+			}
+		);
+	});
+}
+
+$(document).ready(function(){
+	
+	dropMenu(".drop-menu-effect");
+
+});
+</script> 
+<script type="text/javascript">
+$(function(){
+	
+	var len = $('.slidebtn>ul>li').length;
+	var index = 0;
+	var autoplay;
+	$('.slidebtn li').mouseover(function(){
+		index = $('.slidebtn li').index(this);
+		showImg(index);
+	}).eq(0).mouseover();
+	
+	$('.slidebox').hover(function(){
+		clearInterval(autoplay);
+	},function(){
+		autoplay = setInterval(function(){
+			showImg(index)
+			index++;
+			if(index==len){
+				index=0;
+			}
+		},3000);
+	}).trigger('mouseleave');
+
+	function showImg(index){
+		var picheight = $('.slidebox').height();
+		$('.slidepic').stop(true,false).animate({top:-picheight*index},600)
+		$('.slidebtn li').removeClass('current').eq(index).addClass('current');
+	};
+	});
+</script>

@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>华信-汽车自动变速箱</title>
+<link href="../css/all.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+ <div id="header">
+	<div id="top">
+	  <a href="../index.html"><div id="logo"><img src="../images/logo.jpg" /></div></a>
+      <div id="logo_two"></div>
+    </div>
+    
+ 	<div class="navbox">
+	<div class="nav">
+		<ul class="clearfix">
+			<li><a href="../index.html" class="selected"><span>网站首页</span></a></li>
+			<li class="drop-menu-effect">
+				<a href="cop-intro.html"><span>公司介绍</span></a>
+			</li>
+		  <li class="drop-menu-effect">
+				<a href="../huaxin/product-show.html"><span>产品展示中心</span></a>
+			</li>
+			<li class="drop-menu-effect">
+				<a href="../huaxin/service.html"><span>技术服务</span></a>	
+			</li>
+		    <li class="drop-menu-effect">
+				<a  href="contact.html"><span>联系我们</span></a>
+			</li>
+    	</ul>
+	</div>
+    </div>
+  <p>&nbsp;</p>
+ </div>
+
+  <div id="content">
+        <div id="mid">
+           <div class="slidebox">
+	          <ul class="slidepic">
+		          <li><a href=""><img  src="../images/523.jpg" /></a></li>
+		          <li><a href=""><img  src="../images/524.jpg" /></a></li>
+		          <li><a href=""><img  src="../images/521.jpg" /></a></li>
+	          </ul>
+	        <div class="slidebtn">
+               <ul>
+		     	<li class="current">1</li>
+			    <li>2</li>
+				<li>3</li>					
+		   	  </ul>
+	        </div>
+         </div>  
+        </div>
+  <div>
+  
+
+    <div id="content_center">
+     		<div id="com-item"><img src="../images/logo.jpg"/></div> 
+            <p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;苏州华信自动变速箱维修站&nbsp; 每天都在精心研究自动变速箱，专业的服务源于对自动变速箱的专业见解!</strong><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;始终坚持“诚信为本”的经营方针.在定位故障之后，得到了客户确认再签订维修合同，没得到您的确认，绝不上架恶意收取拆装费、工时费等等  每项金额与数量都清清楚楚，让您知道钱花在了哪里。另外我们有专业齐全的库存，避免“等个配件花了几天时间”的问题，为您节省宝贵时间。
+我们的优势:1专业精修汽车自动变速箱 技术精通2整套检测设备精确定位故障3库存完备为您节约时间4售后完善真正同新车质保2年.
+			</p>
+           <p><strong>承诺：</strong>电脑免费检测诊断，维修前为客户通透讲解故障原因与处理，凡我们所修变速箱全采用正厂配件，全部保用2年，彻底解决您担心的售后问题。正规合同透明操作，杜绝二次收费。全程严格维修质量监控，杜绝返工耽误您的时间.
+           	</p>
+<p><strong>售后：</strong>我们坚守两年不限公里数保修的承诺，在收到反馈信息24小时之内为您做出满意处理。诚实守信，一个电话火速做到上门保修服务</p>
+<p><strong>硬件：</strong>全套自动变速箱维修检测设备，各种车型检测电脑，变速箱总成模拟测试设备，变扭器再生、阀体清洗、换油设备。
+<p><strong>业务：</strong>专修轿车自动变速箱、无级变速箱CVT，出售相关零配件及总成。
+<p><strong>我们的三大优势：</strong>
+　　我们的技术＝4S店
+　　我们的服务＞4S店
+　　我们的价格＜4S店
+</p>
+<p><strong>优惠活动:</strong>
+现在维修工时费全免 保修期内换油工时一律免费 油品打折 外来省市车辆报销过路费油费 同时享受爱车整整40项的免费系统检测让您畅行无忧无论你是否在本站维修过。只要介绍一个客户到本站维修就可享受一次免费更换自动变速箱油的服务.
+</p>
+    </div>                 
+
+          <div id="footer">
+            <center><p>苏州华信自动变速箱维修&nbsp;&nbsp;联系电话：180-1400-0207&nbsp;&nbsp;</p></center>
+              <center><p>Copyright © 2015 苏州华信自动变速箱维修 www.autohuaxin.com 版权所有 All rights reserved</p></center>
+        </div>     
+</body>
+</html>
+
+<script src="../js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript">
+function dropMenu(obj){
+	$(obj).each(function(){
+		var theSpan = $(this);
+		var theMenu = theSpan.find(".submenu");
+		var tarHeight = theMenu.height();
+		theMenu.css({height:0,opacity:0});
+		theSpan.hover(
+			function(){
+				$(this).addClass("selected");
+				theMenu.stop().show().animate({height:tarHeight,opacity:1},400);
+			},
+			function(){
+				$(this).removeClass("selected");
+				theMenu.stop().animate({height:0,opacity:0},400,function(){
+					$(this).css({display:"none"});
+				});
+			}
+		);
+	});
+}
+
+$(document).ready(function(){
+	
+	dropMenu(".drop-menu-effect");
+
+});
+</script> 
+<script type="text/javascript">
+$(function(){
+	
+	var len = $('.slidebtn>ul>li').length;
+	var index = 0;
+	var autoplay;
+	$('.slidebtn li').mouseover(function(){
+		index = $('.slidebtn li').index(this);
+		showImg(index);
+	}).eq(0).mouseover();
+	
+	$('.slidebox').hover(function(){
+		clearInterval(autoplay);
+	},function(){
+		autoplay = setInterval(function(){
+			showImg(index)
+			index++;
+			if(index==len){
+				index=0;
+			}
+		},3000);
+	}).trigger('mouseleave');
+
+	function showImg(index){
+		var picheight = $('.slidebox').height();
+		$('.slidepic').stop(true,false).animate({top:-picheight*index},600)
+		$('.slidebtn li').removeClass('current').eq(index).addClass('current');
+	};
+	});
+</script>

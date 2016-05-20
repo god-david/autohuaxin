@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>华信-汽车自动变速箱</title>
+<link href="../css/all.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+ <div id="header">
+	<div id="top">
+	  <a href="../index.html"><div id="logo"><img src="../images/logo.jpg" /></div></a>  
+      <div id="logo_two"></div>
+    </div>
+    
+ 	<div class="navbox">
+	<div class="nav">
+		<ul class="clearfix">
+			<li><a href="../index.html" class="selected"><span>网站首页</span></a></li>
+			<li class="drop-menu-effect">
+				<a href="cop-intro.html"><span>公司介绍</span></a>
+			</li>
+		  <li class="drop-menu-effect">
+				<a href="huaxin/../product-show.html"><span>产品展示中心</span></a>	
+			</li>
+			<li class="drop-menu-effect">
+				<a href="huaxin/../service.html"><span>技术服务</span></a>	
+			</li>
+		    <li class="drop-menu-effect">
+				<a href="contact.html"><span>联系我们</span></a>
+			</li>
+    	</ul>
+	</div>
+    </div>
+  <p>&nbsp;</p>
+ </div>
+
+  <div id="content">
+        <div id="mid">
+           <div class="slidebox">
+	          <ul class="slidepic">
+		          <li><a href=""><img  src="../images/523.jpg" /></a></li>
+		          <li><a href=""><img  src="../images/524.jpg" /></a></li>
+		          <li><a href=""><img  src="../images/521.jpg" /></a></li>
+	          </ul>
+	        <div class="slidebtn">
+               <ul>
+		     	<li class="current">1</li>
+			    <li>2</li>
+				<li>3</li>					
+		   	  </ul>
+	        </div>
+         </div>  
+        </div>
+  <div>
+  
+
+    <div id="contact_service"> 
+     	  <div class="card">
+      		<h1>联系我们</h1>
+     		 <p>联系人:申经理</p>
+     		 <p>电话:180-1400-0207</p>
+     		 <p>地址:吴中区迎春南路76号</p>
+     		 <p>Email:1036600622@qq.com</p>
+   		  </div>
+
+
+      <div id="product-service_answer">
+			<div id="cjbsx-service_answer"><p>常见变速箱问题及行业展示</p></div>
+            <div id="techology_service_show_answer">
+					<div class="pic-show"><img src="../images/bsx/bsx562.jpg" width="300px" height="200px" />
+						<div class="b_b_b">宝马/奥迪车正在检修</div>
+					</div>
+					<br />
+					<div class="text-intro"><p>变速箱的常见问题及解决方案：</p>
+					&nbsp; &nbsp;&nbsp;&nbsp;承诺：原厂电脑免费检测诊断，维修前为客户通透讲解故障原因与处理，凡我们所修变速箱全采用正厂配件，全部保用2年，彻底解决您担心的售后问题。正规合同透明操作，杜绝二次收费。全程严格维修质量监控，杜绝返工耽误您的时间。<br />&nbsp;&nbsp;&nbsp;&nbsp;售后：我们坚守承诺，在收到反馈信息24小时之内为您做出满意处理。诚实守信，一个电话火速做到上门保修服务，确保每一位客户利益。维修价格比维修站要低&nbsp;30%-50%，真正的&ldquo;4S店品质，最低的价格&rdquo;，因为一直给同行加代工的原因，所以我们的价格是行业里最低的，服务又是最体贴的！<br />&nbsp;&nbsp;&nbsp;&nbsp;硬件：全套自动变速箱维修检测设备，各种车型原厂检测电脑，变速箱总成模拟测试设备，变扭器再生、阀体清洗、换油设备。<br />&nbsp;&nbsp;&nbsp;&nbsp;人员：拥有多名业内资深高级技师，最少都是7年以上的职业师傅，他们有丰富经验，让您安心放心。<br />&nbsp;&nbsp;&nbsp;&nbsp;业务：专修轿车自动变速箱、无级变速箱CVT，出售相关零配件及总成。
+					</div>
+            </div>
+      </div>
+
+
+    </div>                 
+          <div id="footer">
+            <center><p>苏州华信自动变速箱维修&nbsp;&nbsp;联系电话：180-1400-0207&nbsp;&nbsp;</p></center>
+              <center><p>Copyright © 2015 苏州华信自动变速箱维修 www.autohuaxin.com 版权所有 All rights reserved</p></center>
+        </div>     
+</body>
+</html>
+
+<script src="../js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript">
+function dropMenu(obj){
+	$(obj).each(function(){
+		var theSpan = $(this);
+		var theMenu = theSpan.find(".submenu");
+		var tarHeight = theMenu.height();
+		theMenu.css({height:0,opacity:0});
+		theSpan.hover(
+			function(){
+				$(this).addClass("selected");
+				theMenu.stop().show().animate({height:tarHeight,opacity:1},400);
+			},
+			function(){
+				$(this).removeClass("selected");
+				theMenu.stop().animate({height:0,opacity:0},400,function(){
+					$(this).css({display:"none"});
+				});
+			}
+		);
+	});
+}
+
+$(document).ready(function(){
+	
+	dropMenu(".drop-menu-effect");
+
+});
+</script> 
+<script type="text/javascript">
+$(function(){
+	
+	var len = $('.slidebtn>ul>li').length;
+	var index = 0;
+	var autoplay;
+	$('.slidebtn li').mouseover(function(){
+		index = $('.slidebtn li').index(this);
+		showImg(index);
+	}).eq(0).mouseover();
+	
+	$('.slidebox').hover(function(){
+		clearInterval(autoplay);
+	},function(){
+		autoplay = setInterval(function(){
+			showImg(index)
+			index++;
+			if(index==len){
+				index=0;
+			}
+		},3000);
+	}).trigger('mouseleave');
+
+	function showImg(index){
+		var picheight = $('.slidebox').height();
+		$('.slidepic').stop(true,false).animate({top:-picheight*index},600)
+		$('.slidebtn li').removeClass('current').eq(index).addClass('current');
+	};
+	});
+</script>

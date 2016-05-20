@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>华信-汽车自动变速箱</title>
+<link href="../css/all.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+ <div id="header">
+	<div id="top">
+	  <a href="../index.html"><div id="logo"><img src="../images/logo.jpg" /></div></a>  
+      <div id="logo_two"></div>
+    </div>
+    
+ 	<div class="navbox">
+	<div class="nav">
+		<ul class="clearfix">
+			<li><a href="../index.html" class="selected"><span>网站首页</span></a></li>
+			<li class="drop-menu-effect">
+				<a href="cop-intro.html"><span>公司介绍</span></a>
+			</li>
+		  <li class="drop-menu-effect">
+				<a href="huaxin/../product-show.html"><span>产品展示中心</span></a>	
+			</li>
+			<li class="drop-menu-effect">
+				<a href="huaxin/../service.html"><span>技术服务</span></a>	
+			</li>
+		    <li class="drop-menu-effect">
+				<a href="contact.html"><span>联系我们</span></a>
+			</li>
+    	</ul>
+	</div>
+    </div>
+  <p>&nbsp;</p>
+ </div>
+
+  <div id="content">
+        <div id="mid">
+           <div class="slidebox">
+	          <ul class="slidepic">
+		          <li><a href=""><img  src="../images/523.jpg" /></a></li>
+		          <li><a href=""><img  src="../images/524.jpg" /></a></li>
+		          <li><a href=""><img  src="../images/521.jpg" /></a></li>
+	          </ul>
+	        <div class="slidebtn">
+               <ul>
+		     	<li class="current">1</li>
+			    <li>2</li>
+				<li>3</li>					
+		   	  </ul>
+	        </div>
+         </div>  
+        </div>
+  <div>
+  
+
+    <div id="contact_service"> 
+     	  <div class="card">
+      		<h1>联系我们</h1>
+     		 <p>联系人:申经理</p>
+     		 <p>电话:180-1400-0207</p>
+     		 <p>地址:吴中区迎春南路76号</p>
+     		 <p>Email:1036600622@qq.com</p>
+   		  </div>
+
+
+      <div id="product-service_answer">
+			<div id="cjbsx-service_answer"><p>常见变速箱问题及行业展示</p></div>
+            <div id="techology_service_show_answer">
+					<div class="pic-show"><img src="../images/bsx/bsx256.jpg" width="300px" height="200px" />
+						<div class="b_b_b">维修车间</div>
+					</div>
+					<br />
+					<div class="text-intro"><p>变速箱的常见问题及解决方案：</p>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					检查自动变速箱油时要注意自动变速箱油具有的热胀冷缩的特性，因此，应该在 50-80℃ 并在着车态状时检查其 油量，如果在温度较低时，其油面会比较低，反之油面会较高。同时需要注意的是要观察其 油色及油味，这个也是判断自动变速箱是否正常运行的手段之一。现在有些车辆已经不配备变速箱油尺，因此平常检查只能通过维修厂进行。
+					</div>
+            </div>
+      </div>
+
+
+    </div>                 
+          <div id="footer">
+            <center><p>苏州华信自动变速箱维修&nbsp;&nbsp;联系电话：180-1400-0207&nbsp;&nbsp;</p></center>
+              <center><p>Copyright © 2015 苏州华信自动变速箱维修 www.autohuaxin.com 版权所有 All rights reserved</p></center>
+        </div>     
+</body>
+</html>
+
+<script src="../js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript">
+function dropMenu(obj){
+	$(obj).each(function(){
+		var theSpan = $(this);
+		var theMenu = theSpan.find(".submenu");
+		var tarHeight = theMenu.height();
+		theMenu.css({height:0,opacity:0});
+		theSpan.hover(
+			function(){
+				$(this).addClass("selected");
+				theMenu.stop().show().animate({height:tarHeight,opacity:1},400);
+			},
+			function(){
+				$(this).removeClass("selected");
+				theMenu.stop().animate({height:0,opacity:0},400,function(){
+					$(this).css({display:"none"});
+				});
+			}
+		);
+	});
+}
+
+$(document).ready(function(){
+	
+	dropMenu(".drop-menu-effect");
+
+});
+</script> 
+<script type="text/javascript">
+$(function(){
+	
+	var len = $('.slidebtn>ul>li').length;
+	var index = 0;
+	var autoplay;
+	$('.slidebtn li').mouseover(function(){
+		index = $('.slidebtn li').index(this);
+		showImg(index);
+	}).eq(0).mouseover();
+	
+	$('.slidebox').hover(function(){
+		clearInterval(autoplay);
+	},function(){
+		autoplay = setInterval(function(){
+			showImg(index)
+			index++;
+			if(index==len){
+				index=0;
+			}
+		},3000);
+	}).trigger('mouseleave');
+
+	function showImg(index){
+		var picheight = $('.slidebox').height();
+		$('.slidepic').stop(true,false).animate({top:-picheight*index},600)
+		$('.slidebtn li').removeClass('current').eq(index).addClass('current');
+	};
+	});
+</script>

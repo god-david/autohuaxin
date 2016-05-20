@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>华信-汽车自动变速箱</title>
+<link href="../css/all.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+ <div id="header">
+	<div id="top">
+	  <a href="../index.html"><div id="logo"><img src="../images/logo.jpg" /></div></a>  
+      <div id="logo_two"></div>
+    </div>
+    
+ 	<div class="navbox">
+	<div class="nav">
+		<ul class="clearfix">
+			<li><a href="../index.html" class="selected"><span>网站首页</span></a></li>
+			<li class="drop-menu-effect">
+				<a href="cop-intro.html"><span>公司介绍</span></a>
+			</li>
+		  <li class="drop-menu-effect">
+				<a href="huaxin/../product-show.html"><span>产品展示中心</span></a>	
+			</li>
+			<li class="drop-menu-effect">
+				<a href="huaxin/../service.html"><span>技术服务</span></a>	
+			</li>
+		    <li class="drop-menu-effect">
+				<a href="contact.html"><span>联系我们</span></a>
+			</li>
+    	</ul>
+	</div>
+    </div>
+  <p>&nbsp;</p>
+ </div>
+
+  <div id="content">
+        <div id="mid">
+           <div class="slidebox">
+	          <ul class="slidepic">
+		          <li><a href=""><img  src="../images/523.jpg" /></a></li>
+		          <li><a href=""><img  src="../images/524.jpg" /></a></li>
+		          <li><a href=""><img  src="../images/521.jpg" /></a></li>
+	          </ul>
+	        <div class="slidebtn">
+               <ul>
+		     	<li class="current">1</li>
+			    <li>2</li>
+				<li>3</li>					
+		   	  </ul>
+	        </div>
+         </div>  
+        </div>
+  <div>
+  
+
+    <div id="contact_service"> 
+     	  <div class="card">
+      		<h1>联系我们</h1>
+     		 <p>联系人:申经理</p>
+     		 <p>电话:180-1400-0207</p>
+     		 <p>地址:吴中区迎春南路76号</p>
+     		 <p>Email:1036600622@qq.com</p>
+   		  </div>
+
+
+      <div id="product-service_answer">
+			<div id="cjbsx-service_answer"><p>常见变速箱问题及行业展示</p></div>
+            <div id="techology_service_show_answer">
+					<div class="pic-show"><img src="../images/bsx/大众变速箱.jpg" width="300px" height="200px" />
+						<div class="b_b_b">大众变速箱</div>
+					</div>
+					<br />
+					<div class="text-intro"><p>变速箱的常见问题及解决方案：</p>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;上海通用汽车公司生产的别克轿车装备的是4T65E型液力变矩器电控自动变速箱，采用横置前驱动结构。上海别克的4T65E自动变速箱的挡位分为P挡、R挡、N挡、D挡、3挡、2挡、1挡。以下按照自动变速箱挡位面板的标志顺序逐个介绍每个挡位的作用及注意事项。P(Parking)挡的使用,在交通标志上“P”就是停车的意思.R(Reverse)挡的使用 “R”是倒车挡，倒车时可将拨杆移至R挡.N(Neutral)挡的使用 “N”一般视为空挡.N挡适用于发动机熄火、车辆停驶、需要启动发动机或汽车行驶时熄火再重新启动或被其他车辆牵引时D(Over Drive)挡的使用D挡是汽车行驶过程中最常用的前进超速挡位，用在一般道路行驶。OD挡一般向下兼容3、2、1挡，并会因车速及负荷的变化而自动换挡。
+					
+					</div>
+            </div>
+      </div>
+
+
+    </div>                 
+          <div id="footer">
+            <center><p>苏州华信自动变速箱维修&nbsp;&nbsp;联系电话：180-1400-0207&nbsp;&nbsp;</p></center>
+              <center><p>Copyright © 2015 苏州华信自动变速箱维修 www.autohuaxin.com 版权所有 All rights reserved</p></center>
+        </div>     
+</body>
+</html>
+
+<script src="../js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript">
+function dropMenu(obj){
+	$(obj).each(function(){
+		var theSpan = $(this);
+		var theMenu = theSpan.find(".submenu");
+		var tarHeight = theMenu.height();
+		theMenu.css({height:0,opacity:0});
+		theSpan.hover(
+			function(){
+				$(this).addClass("selected");
+				theMenu.stop().show().animate({height:tarHeight,opacity:1},400);
+			},
+			function(){
+				$(this).removeClass("selected");
+				theMenu.stop().animate({height:0,opacity:0},400,function(){
+					$(this).css({display:"none"});
+				});
+			}
+		);
+	});
+}
+
+$(document).ready(function(){
+	
+	dropMenu(".drop-menu-effect");
+
+});
+</script> 
+<script type="text/javascript">
+$(function(){
+	
+	var len = $('.slidebtn>ul>li').length;
+	var index = 0;
+	var autoplay;
+	$('.slidebtn li').mouseover(function(){
+		index = $('.slidebtn li').index(this);
+		showImg(index);
+	}).eq(0).mouseover();
+	
+	$('.slidebox').hover(function(){
+		clearInterval(autoplay);
+	},function(){
+		autoplay = setInterval(function(){
+			showImg(index)
+			index++;
+			if(index==len){
+				index=0;
+			}
+		},3000);
+	}).trigger('mouseleave');
+
+	function showImg(index){
+		var picheight = $('.slidebox').height();
+		$('.slidepic').stop(true,false).animate({top:-picheight*index},600)
+		$('.slidebtn li').removeClass('current').eq(index).addClass('current');
+	};
+	});
+</script>

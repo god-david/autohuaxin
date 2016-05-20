@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>华信-汽车自动变速箱</title>
+<link href="../css/all.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+ <div id="header">
+	<div id="top">
+	  <a href="../index.html"><div id="logo"><img src="../images/logo.jpg" /></div></a>  
+      <div id="logo_two"></div>
+    </div>
+    
+ 	<div class="navbox">
+	<div class="nav">
+		<ul class="clearfix">
+			<li><a href="../index.html" class="selected"><span>网站首页</span></a></li>
+			<li class="drop-menu-effect">
+				<a href="cop-intro.html"><span>公司介绍</span></a>
+			</li>
+		  <li class="drop-menu-effect">
+				<a href="huaxin/../product-show.html"><span>产品展示中心</span></a>	
+			</li>
+			<li class="drop-menu-effect">
+				<a href="huaxin/../service.html"><span>技术服务</span></a>	
+			</li>
+		    <li class="drop-menu-effect">
+				<a href="contact.html"><span>联系我们</span></a>
+			</li>
+    	</ul>
+	</div>
+    </div>
+  <p>&nbsp;</p>
+ </div>
+
+  <div id="content">
+        <div id="mid">
+           <div class="slidebox">
+	          <ul class="slidepic">
+		          <li><a href=""><img  src="../images/523.jpg" /></a></li>
+		          <li><a href=""><img  src="../images/524.jpg" /></a></li>
+		          <li><a href=""><img  src="../images/521.jpg" /></a></li>
+	          </ul>
+	        <div class="slidebtn">
+               <ul>
+		     	<li class="current">1</li>
+			    <li>2</li>
+				<li>3</li>					
+		   	  </ul>
+	        </div>
+         </div>  
+        </div>
+  <div>
+  
+
+    <div id="contact_service"> 
+     	  <div class="card">
+      		<h1>联系我们</h1>
+     		 <p>联系人:申经理</p>
+     		 <p>电话:180-1400-0207</p>
+     		 <p>地址:吴中区迎春南路76号</p>
+     		 <p>Email:1036600622@qq.com</p>
+   		  </div>
+
+
+
+
+
+      <div id="product-service_answer">
+			<div id="cjbsx-service_answer"><p>常见变速箱问题及行业展示</p></div>
+            <div id="techology_service_show_answer">
+					<div class="pic-show"><img src="../images/bsx/别克4T65E.jpg" width="300px" height="200px" />
+						<div class="b_b_b">别克4T65E</div>
+					</div>
+					<br />
+					<div class="text-intro"><p>变速箱的常见问题及解决方案：</p>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					别克系列变速箱发冲的原因和解决:别克君威变速箱、凯越1.8自动变速箱、别克新世纪变速箱、别克GL8变速箱在行驶中发冲的故障现像基本相同，都是出现在换档环节上，引起这个故障的因素主要有以下几点，在这里贴出来供大家交流学习：最初出现这种故障的时候，感觉不是很明显，只是换挡稍有点顿挫感，有时有、有时没有。在这里想提醒一下广大朋友们平时做好保养、变速箱油清洗更换、滤网的更换，这样能合理延长变速箱的正常使用时间。如果一旦出现这种故障，维修起来过程如下：第一步：先用电脑检测控制的电磁阀、清洗变速箱油路，确认问题出现的环节；第二步：已确认电磁阀没有故障、油路也正常的情况下，这就需要解体维修了，检查是否有严重受损的部件，同时更换密封件和摩擦片，对变速箱做彻底清洗检测。
+
+					</div>
+            </div>
+      </div>
+
+
+
+
+
+
+    </div>                 
+          <div id="footer">
+            <center><p>苏州华信自动变速箱维修&nbsp;&nbsp;联系电话：180-1400-0207&nbsp;&nbsp;</p></center>
+              <center><p>Copyright © 2015 苏州华信自动变速箱维修 www.autohuaxin.com 版权所有 All rights reserved</p></center>
+        </div>     
+</body>
+</html>
+
+<script src="../js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript">
+function dropMenu(obj){
+	$(obj).each(function(){
+		var theSpan = $(this);
+		var theMenu = theSpan.find(".submenu");
+		var tarHeight = theMenu.height();
+		theMenu.css({height:0,opacity:0});
+		theSpan.hover(
+			function(){
+				$(this).addClass("selected");
+				theMenu.stop().show().animate({height:tarHeight,opacity:1},400);
+			},
+			function(){
+				$(this).removeClass("selected");
+				theMenu.stop().animate({height:0,opacity:0},400,function(){
+					$(this).css({display:"none"});
+				});
+			}
+		);
+	});
+}
+
+$(document).ready(function(){
+	
+	dropMenu(".drop-menu-effect");
+
+});
+</script> 
+<script type="text/javascript">
+$(function(){
+	
+	var len = $('.slidebtn>ul>li').length;
+	var index = 0;
+	var autoplay;
+	$('.slidebtn li').mouseover(function(){
+		index = $('.slidebtn li').index(this);
+		showImg(index);
+	}).eq(0).mouseover();
+	
+	$('.slidebox').hover(function(){
+		clearInterval(autoplay);
+	},function(){
+		autoplay = setInterval(function(){
+			showImg(index)
+			index++;
+			if(index==len){
+				index=0;
+			}
+		},3000);
+	}).trigger('mouseleave');
+
+	function showImg(index){
+		var picheight = $('.slidebox').height();
+		$('.slidepic').stop(true,false).animate({top:-picheight*index},600)
+		$('.slidebtn li').removeClass('current').eq(index).addClass('current');
+	};
+	});
+</script>
